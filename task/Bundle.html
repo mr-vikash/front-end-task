@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+// Add event listener to the "Add to Cart" button
+const addToCartButton = document.querySelector('.add-to-cart');
+addToCartButton.addEventListener('click', () => {
+  // Handle adding to cart logic here
+  // You can get the selected offer, item details, etc. from the DOM
+  // and send them to your server or display a confirmation message
+  console.log('Added to cart!');
+});
+    
+  </script>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .offer-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .offer-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .discount {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .item-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 160px;
+  border: none;
+  border-top: 2px solid rgb(134, 125, 125);
+  margin: 0 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+        <hr class="line">
+        <h4 style="color: red;">YAY! It's BOGO</h4>
+        <hr class="line">
+      </div>
+      
+    <div >
+      <div style="border: 1px solid rgba(222, 213, 213, 0.819); height: 170px; margin-bottom: 8px;padding:20px">
+        <input type="radio" name="offer" id="offer1">
+        <label for="offer1">
+          1 Unit
+          <span style="border:1px solid red; background-color:red;color: white;margin-right: 100px;">10% Off</span>
+          <span style="margin-left: 100px;  width: 100px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">$10.00 USD</span>
+
+          <br>
+          <span style="margin-left:30px;margin-right: 100px;margin-top: 50px;">Standard Price</span>
+          <span style ="margin-left:100px;color:gray;"><strike>$24.00 USD</strike></span>
+        </label>
+        <div style="margin-left: 30px;" class="item-details">
+            <div class="item" style="margin-bottom: 20px;">
+                <div style="margin-bottom: 5px;margin-right: 10px">
+                    <label for="size1" style="display: block;margin-right: 10px;">Size</label>
+                    <select id="size1" style="width: 100%; padding: 5px; margin-bottom: 10px;margin-right: 10px;">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select id="size1" style="width: 100%; padding: 5px; margin-bottom: 10px;margin-right: 10px;">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+            
+                <div style="margin-bottom: 5px;">
+                    <label for="size1" style="display: block;">Color</label>
+                    <select id="color1" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                    </select>
+                    <select id="color1" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                    </select>
+                </div>
+            </div>
+            
+          
+      
+      </div>
+     
+    </div>
+    <div style="border: 1px solid rgba(222, 213, 213, 0.819);height: 170px; margin-bottom: 8px;padding:20px">
+        <input type="radio" name="offer" id="offer1">
+        <label for="offer1">
+          1 Unit
+          <span style="border:1px solid red; background-color:red;color: white;margin-right: 100px;">10% Off</span>
+          <span style ="margin-left:100px;">$18.00 USD</span>
+          <br>
+          <p style="margin-left:30px;">Standard Price</p>
+          <span style ="margin-left:100px;color:gray;"><strike>$24.00 USD</strike></span>
+        </label>
+        <div style="margin-left: 30px;" class="item-details">
+            <div class="item" style="margin-bottom: 20px;">
+                <div style="margin-bottom: 5px;margin-right: 10px">
+                    <label for="size1" style="display: block;margin-right: 10px;">Size</label>
+                    <select id="size1" style="width: 100%; padding: 5px; margin-bottom: 10px;margin-right: 10px;">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select id="size1" style="width: 100%; padding: 5px; margin-bottom: 10px;margin-right: 10px;">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+            
+                <div style="margin-bottom: 5px;">
+                    <label for="size1" style="display: block;">Color</label>
+                    <select id="color1" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                    </select>
+                    <select id="color1" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                    </select>
+                </div>
+            </div>
+            
+          
+      
+      </div>
+     
+    </div>
+    <div style="border: 1px solid rgba(222, 213, 213, 0.819); height: 170px; margin-bottom: 8px;padding:20px">
+        <input type="radio" name="offer" id="offer1">
+        <label for="offer1">
+          1 Unit
+          <span style="border:1px solid red; background-color:red;color: white;margin-right: 100px;">10% Off</span>
+          <span style ="margin-left:100px;">$24.00 USD</span>
+          <br>
+          <p style="margin-left:30px;">Standard Price</p>
+          <span style ="margin-left:100px;color:gray;"><strike>$24.00 USD</strike></span>
+        </label>
+        <div style="margin-left: 30px;" class="item-details">
+            <div class="item" style="margin-bottom: 20px;">
+                <div style="margin-bottom: 5px;margin-right: 10px">
+                    <label for="size1" style="display: block;margin-right: 10px;">Size</label>
+                    <select id="size1" style="width: 100%; padding: 5px; margin-bottom: 10px;margin-right: 10px;">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select id="size1" style="width: 100%; padding: 5px; margin-bottom: 10px;margin-right: 10px;">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+            
+                <div style="margin-bottom: 5px;">
+                    <label for="size1" style="display: block;">Color</label>
+                    <select id="color1" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                    </select>
+                    <select id="color1" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                    </select>
+                </div>
+            </div>
+            
+          
+      
+      </div>
+     
+    </div>
+    <div class="total">
+      <span style="color: red;">Free Delivery</span>
+      <span>Total: $18.00 USD</span>
+    </div>
+    <button style="background-color: red;color: white;" class="add-to-cart">+ &nbsp Add to Cart</button>
+   
+  </div>
+</body>
+</html>
